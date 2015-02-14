@@ -5,9 +5,16 @@ body{
 #view{
     margin: 80px;
 
+    width: 310px;
+    height: 310px;
+
     -moz-perspective: 900px;
     -webkit-perspective: 900px;
     perspective: 900px;
+
+    -moz-perspective-origin:50% 50%;
+    -webkit-perspective-origin:50% 50%;
+    perspective-origin:50% 50%;
 }
 
 .cube{
@@ -15,7 +22,13 @@ body{
     width: 300px;
     height: 300px;
 
+
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+
+    -moz-transform-origin: 50% 50% -150px;
+    -webkit-transform-origin: 50% 50% -150px;
+    transform-origin: 50% 50% -150px;
 }
 
 .side{
@@ -40,9 +53,9 @@ body{
 }
 
 #side2{
-    -moz-transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg) rotateZ(180deg);
+    -webkit-transform: rotateX(180deg) rotateZ(180deg);
+    transform: rotateX(180deg) rotateZ(180deg);
 }
 
 #side3{
