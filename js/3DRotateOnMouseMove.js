@@ -22,9 +22,9 @@ function RotateAllElementsOnMouseMove(params) {
     for (var i = 0; i < MouseMoveRotatingElements.length; i++)
     {
         var elem = MouseMoveRotatingElements[i];
-        elem.style.mozTransform='rotateY('+params.pageY+'deg) rotateX('+params.pageX+'deg)';
-        elem.style.webkitTransform='rotateY('+params.pageY+'deg) rotateX('+params.pageX+'deg)';
-        elem.style.transform='rotateY('+params.pageY+'deg) rotateX('+params.pageX+'deg)';
+        elem.style.mozTransform='rotateX('+params.pageY+'deg) rotateY('+params.pageX+'deg)';
+        elem.style.webkitTransform='rotateX('+params.pageY+'deg) rotateY('+params.pageX+'deg)';
+        elem.style.transform='rotateX('+params.pageY+'deg) rotateY('+params.pageX+'deg)';
 
     }
 }
@@ -32,9 +32,9 @@ function RotateAllElementsOnMouseMove(params) {
 function RotateElement(params){
     var elem = params.toElement;
     if (elem !== null) {
-        elem.style.mozTransform = 'rotateY(' + params.pageY + 'deg) rotateX(' + params.pageX + 'deg)';
-        elem.style.webkitTransform = 'rotateY(' + params.pageY + 'deg) rotateX(' + params.pageX + 'deg)';
-        elem.style.transform = 'rotateY(' + params.pageY + 'deg) rotateX(' + params.pageX + 'deg)';
+        elem.style.mozTransform = 'rotateX(' + params.pageY + 'deg) rotateY(' + params.pageX + 'deg)';
+        elem.style.webkitTransform = 'rotateX(' + params.pageY + 'deg) rotateY(' + params.pageX + 'deg)';
+        elem.style.transform = 'rotateX(' + params.pageY + 'deg) rotateY(' + params.pageX + 'deg)';
     }
 }
 
